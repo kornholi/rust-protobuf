@@ -7,7 +7,6 @@ use std::ptr;
 use std::slice;
 
 use core::Message;
-use core::MessageStatic;
 use core::ProtobufEnum;
 use unknown::UnknownFields;
 use unknown::UnknownValue;
@@ -620,8 +619,8 @@ impl<'a> CodedInputStream<'a> {
         Ok(())
     }
 
-    pub fn read_message<M : Message + MessageStatic>(&mut self) -> ProtobufResult<M> {
-        let mut r: M = MessageStatic::new();
+    pub fn read_message<M : Message>(&mut self) -> ProtobufResult<M> {
+        let mut r: M = Message::new();
         try!(self.merge_message(&mut r));
         try!(r.check_initialized());
         Ok(r)

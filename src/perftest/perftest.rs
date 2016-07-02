@@ -11,7 +11,6 @@ use rand::StdRng;
 use rand::SeedableRng;
 
 use protobuf::Message;
-use protobuf::MessageStatic;
 use perftest_data::PerftestData;
 
 mod perftest_data;
@@ -36,7 +35,7 @@ struct TestRunner {
 }
 
 impl TestRunner {
-    fn run_test<M : Message + MessageStatic>(&self, name: &str, data: &[M]) {
+    fn run_test<M : Message+Clone+Default+PartialEq>(&self, name: &str, data: &[M]) {
         assert!(data.len() > 0, "empty string for test: {}", name);
 
         let mut rng: StdRng = SeedableRng::from_seed(&[10, 20, 30, 40][..]);
@@ -82,7 +81,7 @@ impl TestRunner {
         assert_eq!(random_data.len(), merged);
     }
 
-    fn test<M : Message + MessageStatic>(&mut self, name: &str, data: &[M]) {
+    fn test<M : Message+PartialEq+Clone+Default>(&mut self, name: &str, data: &[M]) {
         if self.selected.as_ref().map(|s| *s == name).unwrap_or(true) {
             self.run_test(name, data);
             self.any_matched = true;

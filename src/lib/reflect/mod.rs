@@ -3,7 +3,6 @@ use std::default::Default;
 use std::marker;
 
 use core::Message;
-use core::MessageStatic;
 use core::ProtobufEnum;
 use descriptor::FileDescriptorProto;
 use descriptor::DescriptorProto;
@@ -189,8 +188,8 @@ pub struct MessageDescriptor {
 }
 
 impl MessageDescriptor {
-    pub fn for_type<M : MessageStatic>() -> &'static MessageDescriptor {
-        MessageStatic::descriptor_static(None::<M>)
+    pub fn for_type<M : Message>() -> &'static MessageDescriptor {
+        Message::descriptor_static(None::<M>)
     }
 
     pub fn new<M : 'static + Message + Default>(

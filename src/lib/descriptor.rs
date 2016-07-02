@@ -142,12 +142,6 @@ impl ::protobuf::Message for FileDescriptorSet {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for FileDescriptorSet {
     fn new() -> FileDescriptorSet {
         FileDescriptorSet::new()
     }
@@ -171,6 +165,10 @@ impl ::protobuf::MessageStatic for FileDescriptorSet {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -776,12 +774,6 @@ impl ::protobuf::Message for FileDescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for FileDescriptorProto {
     fn new() -> FileDescriptorProto {
         FileDescriptorProto::new()
     }
@@ -854,6 +846,10 @@ impl ::protobuf::MessageStatic for FileDescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -1385,12 +1381,6 @@ impl ::protobuf::Message for DescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for DescriptorProto {
     fn new() -> DescriptorProto {
         DescriptorProto::new()
     }
@@ -1452,6 +1442,10 @@ impl ::protobuf::MessageStatic for DescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -1644,12 +1638,6 @@ impl ::protobuf::Message for DescriptorProto_ExtensionRange {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for DescriptorProto_ExtensionRange {
     fn new() -> DescriptorProto_ExtensionRange {
         DescriptorProto_ExtensionRange::new()
     }
@@ -1679,6 +1667,10 @@ impl ::protobuf::MessageStatic for DescriptorProto_ExtensionRange {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -1855,12 +1847,6 @@ impl ::protobuf::Message for DescriptorProto_ReservedRange {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for DescriptorProto_ReservedRange {
     fn new() -> DescriptorProto_ReservedRange {
         DescriptorProto_ReservedRange::new()
     }
@@ -1890,6 +1876,10 @@ impl ::protobuf::MessageStatic for DescriptorProto_ReservedRange {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -2416,12 +2406,6 @@ impl ::protobuf::Message for FieldDescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for FieldDescriptorProto {
     fn new() -> FieldDescriptorProto {
         FieldDescriptorProto::new()
     }
@@ -2491,6 +2475,10 @@ impl ::protobuf::MessageStatic for FieldDescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -2846,12 +2834,6 @@ impl ::protobuf::Message for OneofDescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for OneofDescriptorProto {
     fn new() -> OneofDescriptorProto {
         OneofDescriptorProto::new()
     }
@@ -2881,6 +2863,10 @@ impl ::protobuf::MessageStatic for OneofDescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -3122,12 +3108,6 @@ impl ::protobuf::Message for EnumDescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for EnumDescriptorProto {
     fn new() -> EnumDescriptorProto {
         EnumDescriptorProto::new()
     }
@@ -3161,6 +3141,10 @@ impl ::protobuf::MessageStatic for EnumDescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -3399,12 +3383,6 @@ impl ::protobuf::Message for EnumValueDescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for EnumValueDescriptorProto {
     fn new() -> EnumValueDescriptorProto {
         EnumValueDescriptorProto::new()
     }
@@ -3439,6 +3417,10 @@ impl ::protobuf::MessageStatic for EnumValueDescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -3682,12 +3664,6 @@ impl ::protobuf::Message for ServiceDescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for ServiceDescriptorProto {
     fn new() -> ServiceDescriptorProto {
         ServiceDescriptorProto::new()
     }
@@ -3721,6 +3697,10 @@ impl ::protobuf::MessageStatic for ServiceDescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -4087,12 +4067,6 @@ impl ::protobuf::Message for MethodDescriptorProto {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for MethodDescriptorProto {
     fn new() -> MethodDescriptorProto {
         MethodDescriptorProto::new()
     }
@@ -4142,6 +4116,10 @@ impl ::protobuf::MessageStatic for MethodDescriptorProto {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -4838,12 +4816,6 @@ impl ::protobuf::Message for FileOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for FileOptions {
     fn new() -> FileOptions {
         FileOptions::new()
     }
@@ -4937,6 +4909,10 @@ impl ::protobuf::MessageStatic for FileOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -5292,12 +5268,6 @@ impl ::protobuf::Message for MessageOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for MessageOptions {
     fn new() -> MessageOptions {
         MessageOptions::new()
     }
@@ -5341,6 +5311,10 @@ impl ::protobuf::MessageStatic for MessageOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -5698,12 +5672,6 @@ impl ::protobuf::Message for FieldOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for FieldOptions {
     fn new() -> FieldOptions {
         FieldOptions::new()
     }
@@ -5757,6 +5725,10 @@ impl ::protobuf::MessageStatic for FieldOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -6006,12 +5978,6 @@ impl ::protobuf::Message for OneofOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for OneofOptions {
     fn new() -> OneofOptions {
         OneofOptions::new()
     }
@@ -6035,6 +6001,10 @@ impl ::protobuf::MessageStatic for OneofOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -6248,12 +6218,6 @@ impl ::protobuf::Message for EnumOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for EnumOptions {
     fn new() -> EnumOptions {
         EnumOptions::new()
     }
@@ -6287,6 +6251,10 @@ impl ::protobuf::MessageStatic for EnumOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -6470,12 +6438,6 @@ impl ::protobuf::Message for EnumValueOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for EnumValueOptions {
     fn new() -> EnumValueOptions {
         EnumValueOptions::new()
     }
@@ -6504,6 +6466,10 @@ impl ::protobuf::MessageStatic for EnumValueOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -6685,12 +6651,6 @@ impl ::protobuf::Message for ServiceOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for ServiceOptions {
     fn new() -> ServiceOptions {
         ServiceOptions::new()
     }
@@ -6719,6 +6679,10 @@ impl ::protobuf::MessageStatic for ServiceOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -6900,12 +6864,6 @@ impl ::protobuf::Message for MethodOptions {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for MethodOptions {
     fn new() -> MethodOptions {
         MethodOptions::new()
     }
@@ -6934,6 +6892,10 @@ impl ::protobuf::MessageStatic for MethodOptions {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -7324,12 +7286,6 @@ impl ::protobuf::Message for UninterpretedOption {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for UninterpretedOption {
     fn new() -> UninterpretedOption {
         UninterpretedOption::new()
     }
@@ -7383,6 +7339,10 @@ impl ::protobuf::MessageStatic for UninterpretedOption {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -7588,12 +7548,6 @@ impl ::protobuf::Message for UninterpretedOption_NamePart {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for UninterpretedOption_NamePart {
     fn new() -> UninterpretedOption_NamePart {
         UninterpretedOption_NamePart::new()
     }
@@ -7623,6 +7577,10 @@ impl ::protobuf::MessageStatic for UninterpretedOption_NamePart {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -7770,12 +7728,6 @@ impl ::protobuf::Message for SourceCodeInfo {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for SourceCodeInfo {
     fn new() -> SourceCodeInfo {
         SourceCodeInfo::new()
     }
@@ -7799,6 +7751,10 @@ impl ::protobuf::MessageStatic for SourceCodeInfo {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -8117,12 +8073,6 @@ impl ::protobuf::Message for SourceCodeInfo_Location {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for SourceCodeInfo_Location {
     fn new() -> SourceCodeInfo_Location {
         SourceCodeInfo_Location::new()
     }
@@ -8164,6 +8114,10 @@ impl ::protobuf::MessageStatic for SourceCodeInfo_Location {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -8317,12 +8271,6 @@ impl ::protobuf::Message for GeneratedCodeInfo {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for GeneratedCodeInfo {
     fn new() -> GeneratedCodeInfo {
         GeneratedCodeInfo::new()
     }
@@ -8346,6 +8294,10 @@ impl ::protobuf::MessageStatic for GeneratedCodeInfo {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
@@ -8608,12 +8560,6 @@ impl ::protobuf::Message for GeneratedCodeInfo_Annotation {
         self as &::std::any::Any
     }
 
-    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
-        ::protobuf::MessageStatic::descriptor_static(None::<Self>)
-    }
-}
-
-impl ::protobuf::MessageStatic for GeneratedCodeInfo_Annotation {
     fn new() -> GeneratedCodeInfo_Annotation {
         GeneratedCodeInfo_Annotation::new()
     }
@@ -8652,6 +8598,10 @@ impl ::protobuf::MessageStatic for GeneratedCodeInfo_Annotation {
                 )
             })
         }
+    }
+
+    fn descriptor(&self) -> &'static ::protobuf::reflect::MessageDescriptor {
+        ::protobuf::Message::descriptor_static(None::<Self>)
     }
 }
 
